@@ -1,1 +1,67 @@
 /* Add your own styles */
+.country-table{
+    border: 1;
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 80%;
+    padding: 20px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0783a9;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f272;
+}
+
+tr:hover {
+  background-color: #72a9c9b9;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: #666666dc;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding: 10px;
+    min-width: 50px;
+    border-radius: 5px;
+    font-weight:bold;
+    color:rgb(255, 255, 255);
+    background-color: rgba(10, 126, 81, 0.881);
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+label{
+    font-weight:700;
+}
