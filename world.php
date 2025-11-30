@@ -8,15 +8,6 @@ $lookup  = isset($_GET['lookup']) ? $_GET['lookup'] : '';
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
 
-#$stmt = $conn->query("SELECT * FROM countries");
-
-#$newstmt = $conn ->query("SELECT * FROM countries WHERE name LIKE '%$country%'");
-
-#$citystmt = $conn ->query("SELECT * FROM cities WHERE name LIKE '%$country%'");
-
-#$list = $newstmt -> fetchAll(PDO::FETCH_ASSOC);
-
-#$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   if($lookup === "cities"){
     $stmt = $conn->query(
       "SELECT cities.name AS city_name, cities.district, cities.population
